@@ -23,3 +23,15 @@ export default App2;
 // Self closing tag
 // <Header></Header>
 // </Header>
+
+// Nomeação de classes em CSS
+// Metodologia BEM
+// Blocks
+// Elements
+// Modifiers
+// bloco__elemento--modificador
+// header
+// header__link
+// header__link--small
+
+// Tag vazia em React se chama Fragment ou Fragmento
