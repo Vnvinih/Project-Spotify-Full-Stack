@@ -4,9 +4,11 @@ import { Link, useParams } from 'react-router-dom'
 import { songsArray } from '../assets/database/songs'
 import { artistArray } from '../assets/database/artists'
 
+
 const Song = () => {
   const { id } = useParams()
   // console.log(id)
+
 
   const {image, name, duration, artist, audio } = songsArray.filter(
         (currentSongObj) => currentSongObj.id === Number(id) 
@@ -17,6 +19,18 @@ const Song = () => {
         (currentArtistObj) => currentArtistObj.name === artist
       )[0]
       // console.log(artistObj)
+
+      const songsArrayFromArtist = songsArray.filter(
+            (currentSongObj) => currentSongObj.artist === artist
+          )
+          // console.log(songsArrayFromArtist)
+
+      const randomIndex = Math.floor(Math.random() * (songsArrayFromArtist.length - 1))
+
+      const randomIndex2 = Math.floor(Math.random() * (songsArrayFromArtist.length - 1))
+  
+      const randomIdFromArtist = songsArrayFromArtist[randomIndex].id
+      const randomId2FromArtist = songsArrayFromArtist[randomIndex2].id
 
   return (
     <div className='song'>
@@ -42,7 +56,12 @@ const Song = () => {
           />
         </Link>
 
-        <Player duration = {duration} />
+        <Player 
+         duration = {duration}  
+         randomIdFromArtist = {randomIdFromArtist}
+         randomId2FromArtist = {randomId2FromArtist}
+         audio = {audio}
+         />
 
         <div>
           <p className='song__name'>{name}</p>
