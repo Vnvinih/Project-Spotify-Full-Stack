@@ -1,5 +1,5 @@
 # Spotify
-![image](https://github.com/user-attachments/assets/84cef607-673d-4dd0-8a2e-f33122d6dbb5)
+![image](https://github.com/user-attachments/assets/663af7a8-f125-4bb2-96a2-bd1a9ded6f2c)
 
 # Sobre o projeto:
 A aplicação com estilo do Spotify é um projeto Full-Stack, contendo Front-End, Back-End e Banco de Dados, tendo integração e conexão entre eles.
