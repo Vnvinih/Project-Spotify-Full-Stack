@@ -1,26 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const SongItem = ({image, name, duration, artist, audio, id, index}) => {
+const SongItem = ({ image, name, duration, artist, audio, id, index }) => {
   return (
-    <Link to={`/song/${id}`} className='song-item'>
-    <div className='song-item__number-album'>
+    <Link to={`/song/${id}`} className="song-item">
+      <div className="song-item__number-album">
         <p>{index + 1}</p>
 
-        <div className='song-item__album'>
-        <img 
+        <div className="song-item__album">
+          <img
             src={image}
             alt={`Imagem da Música ${name}`}
-            className='song-item__image'
-            />
+            className="song-item__image"
+          />
 
-            <p className='song-item__name'>{name}</p>
+          <p className="song-item__name">{name}</p>
         </div>
-    </div>
+      </div>
 
-        <p>{duration}</p>
+      <p>{duration}</p>
     </Link>
-  )
-}
+  );
+};
 
-export default SongItem
+export default SongItem;
