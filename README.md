@@ -1,5 +1,5 @@
 # Spotify
-https://logodownload.org/wp-content/uploads/2016/09/spotify-logo-0.png
+![image](https://github.com/user-attachments/assets/84cef607-673d-4dd0-8a2e-f33122d6dbb5)
 
 # Sobre o projeto:
 A aplicação com estilo do Spotify é um projeto Full-Stack, contendo Front-End, Back-End e Banco de Dados, tendo integração e conexão entre eles.
