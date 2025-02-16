@@ -1,11 +1,16 @@
-import { MongoClient } from "mongodb"
+
+// JavaScript Assincrono
+// await async
+// Fullfilled
+import { MongoClient } from "mongodb";
 
 const URI =
-"mongodb+srv://Vnvinih:@Vnvinih1@cluster0.2pkhs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+ "mongodb+srv://Vnvinih:@Vnvinih1@cluster0>.mongodb.net/<database>?retryWrites=true&w=majority"
 
-const client = new MongoClient(URI)
+  
+const client = new MongoClient(URI);
 
-const db = client.db("spotifyAula")
-const songCollection = db.collection('songs').find({}).toArray()
+export const db = client.db("spotifyAula");
+// const songCollection = await db.collection("songs").find({}).toArray();
 
-console.log(songCollection)
+// console.log(songCollection);
